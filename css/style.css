@@ -60,7 +60,6 @@ Keyframes for animation*/
   to{
     width:420px;
   }
-
 }
 
 @keyframes logo_wiggle{
@@ -74,12 +73,11 @@ Keyframes for animation*/
 } 
 
 #logo{
-  -webkit-animation-name: logo-wiggle;
-  animation-name: logo-wiggle;
+  -webkit-animation-name: logo_wiggle;
+  animation-name: logo_wiggle;
   -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
+  animation-duration: 3s;
+  
   
 
   /* -webkit-animation-name: logo_wiggle;
@@ -192,7 +190,8 @@ header{
 
   /* Cards! */
   .card {
-    
+    flex-basis: 225px;
+    flex-wrap: wrap;
   }
 
   .card_big{
@@ -203,11 +202,13 @@ header{
   /* Navbar */
 
   header{
+    flex-direction: row;
+    justify-content: space-between;
     
   }
 
   .nav_links{
-    
+    flex-direction: row;
   }
 
   .nav_item a{
