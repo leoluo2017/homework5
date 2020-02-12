@@ -78,12 +78,13 @@ Keyframes for animation*/
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   
-  
+}
 
-  /* -webkit-animation-name: logo_wiggle;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: 1; */
-  
+
+@media (prefers-reduced-motion: reduce) {
+  #logo {
+    animation: none;
+  }
 }
 
 /* Cards! */
