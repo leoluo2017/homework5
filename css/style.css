@@ -54,25 +54,51 @@ footer{
 Keyframes for animation*/
 
 @-webkit-keyframes logo_wiggle{
+  from{
+    width:25px;
+  }
+  to{
+    width:420px;
+  }
 
 }
 
 @keyframes logo_wiggle{
+  from{
+    width:25px;
+  }
+  to{
+    width:420px;
+  }
 
 } 
 
 #logo{
+  -webkit-animation-name: logo-wiggle;
+  animation-name: logo-wiggle;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  
+
+  /* -webkit-animation-name: logo_wiggle;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1; */
   
 }
 
 /* Cards! */
 .pricing{
     min-height: 500px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   
 }
 
 .card {
-  
   margin: 12px;
   background: #fff;
   border-radius: 7px;
@@ -121,7 +147,10 @@ Keyframes for animation*/
 /* Gallery! */
 
 .gallery{
-  
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   min-height: 600px;
 }
 
@@ -133,13 +162,17 @@ Keyframes for animation*/
 
 /* Navbar */
 header{
-  
+  display:flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items:center;
   background: #fff;
   border-bottom: 3px solid #50C7C7;
 }
 
 .nav_links{
- 
+  display:flex;
+  flex-direction: column;
   list-style: none;
 }
 
