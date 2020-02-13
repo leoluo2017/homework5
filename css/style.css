@@ -227,6 +227,10 @@ header{
     align-items:flex-start;
   }
 
+  body{
+    background-image:none;
+  }
+
   #gallery{
     display:none;
   }
