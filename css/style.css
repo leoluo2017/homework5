@@ -102,6 +102,7 @@ Keyframes for animation*/
   background: #fff;
   border-radius: 7px;
   padding: 0 0 50px 0;
+  flex:0 0 400px;
 }
 
 .card > header{
